@@ -1,0 +1,211 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop Website</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+   
+  <header>
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="#" class="nav-logo">
+          <h1 class="logo">🎂Cake</h1>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About </a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#theme-cake">Theme Cake</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-right">
+        <p class="phone">+91 9267940307</p>
+
+  <!-- ✅ Cart Icon -->
+  <a href="cart.html" class="cart-icon">
+    <i class="fa fa-shopping-cart"></i>
+    <span id="cart-count">0</span>
+  </a>
+</div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section">
+    <div class="section-content">
+      <div class="hero-detail">
+        <h1>Delicious cakes for every occasion!</h1>
+        <p> Welcome to cake Delight where every lifestyle I stole of love and sweetness! We specialise in crafting cakes that make your celebration special</p>
+        <a href="#menu" class="order-now">Order Now</a>
+      </div>
+
+      <div class="hero-image">
+        <img src="hero-image.png" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT US -->
+  <section class="about-us" id="about">
+    <div class="section-content">
+      <div class="about-image">
+        <img src="about.png" alt="">
+      </div>
+
+      <div class="about-detail">
+        <h1 class="section-title">About Us</h1>
+        <p>At cake delight we believe that every celebration deserves a touch of sweetness. Establish with a passion for baking and a love for creating unforgettable movements, our shop has been crafting delicious cake that bring joy to every occasions. from classic flavours to custom designs we combine premium ingrefients, Artistry, and a dash of love to make cake that not only taste Amazing but look stunning too. whether it rquote birthday, weddings or any special events we are here to make your celebrations truly delightfully. At cake delights, your happiness is our recipe for success!!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXCLUSIVE CAKES (UPDATED) -->
+  <section class="menu-section" id="menu">
+    <h1 class="section-title" style="color: white;">OUR EXCLUSIVE CAKE</h1>
+
+    <div class="section-content">
+      <div class="menu-list">
+
+        <!-- Cake 1 -->
+        <div class="menu-item">
+          <img src="menu1.png" alt="">
+          <h3>Chocolate Cake</h3>
+          <p class="price">₹499 </p>
+          <button class="add-cart" onclick="addToCart('Chocolate Cake', 399)">Add to Cart</button>
+        </div>
+
+        <!-- Cake 2 -->
+        <div class="menu-item">
+          <img src="menu2.png" alt="">
+          <h3>Dark Chocolate</h3>
+          <p class="price">₹99</p>
+          <button class="add-cart" onclick="addToCart('Strawberry Pastry', 99)">Add to Cart</button>
+        </div>
+
+        <!-- Cake 3 -->
+        <div class="menu-item">
+          <img src="menu3.png" alt="">
+          <h3>Premium Chocolate</h3>
+          <p class="price">₹599</p>
+          <button class="add-cart" onclick="addToCart('Dark Chocolate', 199)">Add to Cart</button>
+        </div>
+
+        <!-- Cake 4 -->
+        <div class="menu-item">
+          <img src="menu4.png" alt="">
+          <h3>Cookies Pack</h3>
+          <p class="price">₹249</p>
+          <button class="add-cart" onclick="addToCart('Cookies Pack', 149)">Add to Cart</button>
+        </div>
+
+        <!-- Cake 5 -->
+        <div class="menu-item">
+          <img src="menu5.png" alt="">
+          <h3>Donut</h3>
+          <p class="price">₹199</p>
+          <button class="add-cart" onclick="addToCart('Donut', 79)">Add to Cart</button>
+        </div>
+
+        <!-- Cake 6 -->
+        <div class="menu-item">
+          <img src="menu6.png" alt="">
+          <h3>Brownie</h3>
+          <p class="price">₹199</p>
+          <button class="add-cart" onclick="addToCart('Brownie', 120)">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- THEME CAKE -->
+  <section class="menu-section theme-section" id="theme-cake">
+    <h1 class="section-title" style="color: #5e1f12;">THEME CAKE</h1>
+
+    <div class="section-content">
+      <div class="menu-list">
+        <div class="menu-item"><img src="gallery1.png" alt=""></div>
+        <div class="menu-item"><img src="gallery2.png" alt=""></div>
+        <div class="menu-item"><img src="gallery3.png" alt=""></div>
+        <div class="menu-item"><img src="gallery4.png" alt=""></div>
+        <div class="menu-item"><img src="gallery5.png" alt=""></div>
+        <div class="menu-item"><img src="gallery6.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-us" id="contact">
+    <h1 class="section-title">Contact Us</h1>
+    <div class="section-content">
+      <div class="contact-details">
+        <div><i class="fa-solid fa-location-crosshairs"></i><p>Vivek Vihar, New Delhi, 110095</p></div>
+        <div><i class="fa-solid fa-envelope"></i><p>monupandey04082008@gmail.com</p></div>
+        <div><i class="fa-solid fa-clock"></i><p>Mon–Sat: 10AM - 10PM</p></div>
+        <div><i class="fa-solid fa-clock"></i><p>Sunday Closed</p></div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Full Name">
+          <input type="email" placeholder="Your Email">
+          <textarea placeholder="Your Message"></textarea>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="footer">
+    <div class="section-content">
+      <div class="copyright"><p>@2025 . All Right Reserved</p></div>
+      <div class="footer-links">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Delivery Policy</li>
+          <li>Disclaimer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ SIMPLE CART SCRIPT -->
+ <script>
+  // ✅ Load cart count on page load
+  function loadCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    document.getElementById("cart-count").innerText = cart.length;
+  }
+
+  // ✅ Add to cart function
+  function addToCart(name, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push({ name, price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    loadCartCount();  // Update number
+    alert(name + " added to cart!");
+  }
+
+  loadCartCount();
+</script>
+
+
+</body>
+</html>
